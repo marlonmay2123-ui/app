@@ -1,0 +1,131 @@
+{
+  "identity": {
+    "name": "TalentScout AI",
+    "archetype": "The Performance Pro (Softened)",
+    "vibe": "Trustworthy, Efficient, Tech-Forward",
+    "emotional_tone": "Professional but encouraging. Like a senior recruiter who wants you to succeed."
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Outfit, sans-serif",
+      "weights": ["500", "600", "700"],
+      "usage": "Main titles, section headers, big stats. Use tight tracking (-0.02em)."
+    },
+    "body": {
+      "font_family": "DM Sans, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Chat messages, inputs, labels. High legibility is key."
+    },
+    "code": {
+      "font_family": "JetBrains Mono, monospace",
+      "usage": "Technical questions, code snippets, tech stack tags."
+    }
+  },
+  "colors": {
+    "primary": {
+      "name": "Royal Blue",
+      "hex": "#0052FF",
+      "usage": "Primary buttons, user message bubbles, active states, links."
+    },
+    "background": {
+      "default": "#FFFFFF",
+      "subtle": "#F8FAFC",
+      "chat_bg": "#FFFFFF"
+    },
+    "text": {
+      "primary": "#0F172A",
+      "secondary": "#64748B",
+      "inverse": "#FFFFFF"
+    },
+    "accent": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "tech_tag": "#E0E7FF"
+    },
+    "neutral": {
+      "border": "#E2E8F0",
+      "bot_bubble": "#F1F5F9"
+    }
+  },
+  "layout": {
+    "grid_system": "Tailwind Grid",
+    "spacing_scale": "Generous (p-6, p-8, p-12)",
+    "container_max_width": "max-w-4xl",
+    "border_radius": {
+      "default": "rounded-xl",
+      "bubbles": "rounded-2xl",
+      "buttons": "rounded-full"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-white hover:bg-blue-700 shadow-lg hover:shadow-xl transition-all duration-300 rounded-full px-8 py-3 font-medium",
+      "secondary": "bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 rounded-full px-6 py-2 font-medium",
+      "ghost": "text-slate-600 hover:text-primary hover:bg-blue-50 rounded-lg px-4 py-2"
+    },
+    "inputs": {
+      "chat_input": "bg-white/80 backdrop-blur-md border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 rounded-full px-6 py-4 shadow-sm w-full transition-all",
+      "form_field": "bg-slate-50 border border-slate-200 focus:border-primary rounded-lg px-4 py-3 w-full"
+    },
+    "chat_bubbles": {
+      "bot": "bg-slate-100 text-slate-800 rounded-2xl rounded-tl-sm p-4 max-w-[85%] shadow-sm",
+      "user": "bg-primary text-white rounded-2xl rounded-tr-sm p-4 max-w-[85%] shadow-md ml-auto"
+    },
+    "cards": {
+      "base": "bg-white border border-slate-100 shadow-xl shadow-slate-200/50 rounded-2xl p-6"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-white/80 border-b border-white/20",
+    "shadows": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+    "gradients": "None for backgrounds. Subtle linear-gradient for primary button hover only.",
+    "textures": "Subtle dot grid pattern in the welcome screen background (opacity 0.4)."
+  },
+  "motion": {
+    "entrance": "animate-in fade-in slide-in-from-bottom-4 duration-500 ease-out",
+    "hover": "transition-transform duration-200 hover:-translate-y-0.5",
+    "typing": "animate-pulse"
+  },
+  "media": {
+    "images": [
+      {
+        "category": "hero_workspace",
+        "url": "https://images.unsplash.com/photo-1720118727704-6e7ee5e041dc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjB0ZWNoJTIwb2ZmaWNlJTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3NzAwMTg2ODV8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Minimalist developer workspace with keyboard, used for Welcome Screen right panel."
+      },
+      {
+        "category": "recruiter_avatar",
+        "url": "https://images.unsplash.com/photo-1698047681452-08eba22d0c64?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjByZWNydWl0ZXIlMjBmcmllbmRseSUyMHBvcnRyYWl0fGVufDB8fHx8MTc3MDAxODY4MXww&ixlib=rb-4.1.0&q=85",
+        "description": "Friendly professional recruiter avatar for the chatbot header."
+      },
+      {
+        "category": "partner_logo",
+        "url": "https://images.unsplash.com/photo-1764123108291-0f48d2c7e563?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHw0fHxjb21wYW55JTIwbG9nbyUyMHRlY2glMjBicmFuZHxlbnwwfHx8fDE3NzAwMTg2OTB8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Example partner logo (Atlassian) for social proof."
+      }
+    ],
+    "icons": "Lucide React (already installed). Use: MessageSquare, User, Code, CheckCircle, Send, X, ChevronRight."
+  },
+  "accessibility": {
+    "contrast": "Ensure text is Slate-900 on White, or White on Primary Blue.",
+    "focus_states": "Visible ring-2 ring-primary ring-offset-2 on all interactive elements.",
+    "aria_labels": "Required for all icon-only buttons (e.g., Send button)."
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Install fonts 'Outfit', 'DM Sans', 'JetBrains Mono' via Google Fonts in index.css.",
+    "2. LAYOUT: Create a 'ChatLayout' component that handles the sticky header and floating input area.",
+    "3. STATE: Use a simple array for messages. Each message object should have { id, role: 'bot'|'user', content, type: 'text'|'options'|'code' }.",
+    "4. INTERACTION: When the bot asks for Tech Stack, render a grid of clickable 'Pills' instead of a text input. User clicks pills then 'Confirm'.",
+    "5. ANIMATION: Use 'framer-motion' (if available) or Tailwind 'animate-in' classes for message bubbles appearing.",
+    "6. MOCK DATA: Mock the AI response logic. Simple if/else or a small state machine for the screening flow (Greeting -> Name -> Exp -> Stack -> Questions -> End).",
+    "7. CRITICAL: Do not use 'alert()' for validation. Use inline error text or toast notifications (Sonner).",
+    "8. THEME: Default to Light Mode. Dark mode is optional but if implemented, ensure high contrast (Slate-900 bg)."
+  ],
+  "universal_guidelines": [
+    "Avoid generic 'AI' aesthetics (purple gradients, robot icons).",
+    "Use 2-3x more padding than you think is necessary.",
+    "Micro-interactions are mandatory (hover states, focus rings).",
+    "Never use 'Lorem Ipsum'. Use realistic recruitment copy."
+  ]
+}

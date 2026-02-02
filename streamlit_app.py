@@ -1,6 +1,6 @@
 """
-Emergent Chat - AI Assistant
-A Streamlit-based intelligent chatbot powered by Gemini
+TechScreen AI - Technical Screening Assistant
+A Streamlit-based intelligent chatbot for candidate technical assessment powered by Gemini
 """
 
 import streamlit as st
@@ -17,13 +17,13 @@ load_dotenv()
 
 # Configure page
 st.set_page_config(
-    page_title="Emergent Chat",
+    page_title="TechScreen AI",
     page_icon="🤖",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
 
-# Custom CSS for Emergent dark theme styling
+# Custom CSS for TechScreen AI dark theme styling
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
@@ -487,7 +487,7 @@ def display_messages():
         <div class="chat-message {css_class}">
             <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
                 <span>{icon}</span>
-                <strong>{"You" if msg['role'] == 'user' else "Emergent"}</strong>
+                <strong>{"You" if msg['role'] == 'user' else "TechScreen AI"}</strong>
                 <span style="font-size: 0.8rem; opacity: 0.7;">{msg['timestamp']}</span>
             </div>
             <div>{msg['content']}</div>
@@ -747,7 +747,7 @@ def main():
     if not st.session_state.started:
         st.markdown("""
         <div class="header-container">
-            <h1 style="margin: 0; font-size: 3rem; font-weight: 700;">🤖 Emergent Chat</h1>
+            <h1 style="margin: 0; font-size: 3rem; font-weight: 700;">🤖 TechScreen AI</h1>
             <p style="margin: 0.5rem 0 0 0; font-size: 1.3rem; opacity: 0.95; font-weight: 500;">AI-Powered Technical Screening</p>
         </div>
         """, unsafe_allow_html=True)
@@ -756,7 +756,7 @@ def main():
         with col2:
             st.markdown("""
             <div style="background: linear-gradient(135deg, #1F2937 0%, #111827 100%); padding: 3rem; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5); border: 1px solid #374151; margin-top: 2rem;">
-                <h2 style="color: #60A5FA; margin-top: 0; font-size: 2rem; font-weight: 600; margin-bottom: 1.5rem;">👋 Welcome to Emergent!</h2>
+                <h2 style="color: #60A5FA; margin-top: 0; font-size: 2rem; font-weight: 600; margin-bottom: 1.5rem;">👋 Welcome to TechScreen AI!</h2>
                 <p style="color: #D1D5DB; line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
                     I'm your AI screening assistant powered by advanced language models. I'll help assess your technical skills and experience through an intelligent conversation.
                 </p>
@@ -789,7 +789,7 @@ def main():
         # Header
         st.markdown("""
         <div class="header-container">
-            <h1 style="margin: 0; font-size: 1.8rem;">🤖 Emergent Chat</h1>
+            <h1 style="margin: 0; font-size: 1.8rem;">🤖 TechScreen AI</h1>
             <p style="margin: 0.5rem 0 0 0; opacity: 0.9;">Screening in progress...</p>
         </div>
         """, unsafe_allow_html=True)

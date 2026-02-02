@@ -1,0 +1,11 @@
+# Python Dependencies for TalentScout AI Chatbot
+# Install with: pip install -r requirements_streamlit.txt
+
+# Core Framework
+streamlit>=1.28.0
+
+# LLM Integration
+google-generativeai>=0.3.0
+
+# Environment Management
+python-dotenv>=1.0.0

@@ -48,6 +48,31 @@ dump.rdb
 
 # Python
 __pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Environment variables
+.env
+.env.local
+
+# Streamlit
+.streamlit/
+
+# Session data
+sessions/
+*.json
+
+# IDE
+.vscode/
+.idea/
 *pyc*
 venv/
 .venv/
